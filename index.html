@@ -18,22 +18,39 @@
                     <div id="account-names"></div>
                 </div>
                 <div id="dashboard">
-                    <div><h1>Avion Bank</h1></div>
+                    <div><h1 id="bank-name">Avion Bank</h1></div>
                     <div id="functions">
-                        <div id="balance">
-                            <h2>Balance</h2>
+                        <div id="upper-functions">
+                            <div id="balance">
+                                <h2>Balance</h2>
+                                <div id="peso-balance"></div>
+                            </div>
+                            <div id="upper-right">
+
+                                <div id="deposit">
+                                    <h2>Deposit</h2>
+                                    <input type="number" id="depositAmount" placeholder="Enter amount">
+                                    <button onclick="deposit()">Deposit</button>
+                                </div>
+                                
+                                <div id="withdraw">
+                                    <h2>Withdraw</h2>
+                                    <input type="number" id="withdrawAmount" placeholder="Enter amount">
+                                    <button onclick="withdraw()">Withdraw</button>
+                                </div>
+                                
+    
+                                <div id="send-money">
+                                    <h2>Send money</h2>
+                                </div>
+                            </div>
+
+
                         </div>
-                        <div id="deposit">
-                            <h2>Deposit</h2>
-                        </div>
-                        <div id="withdraw">
-                            <h2>Withdraw</h2>
-                        </div>
-                        <div id="send-money">
-                            <h2>Send money</h2>
-                        </div>
-                        <div id="transactions">
-                            <h2>Transaction</h2>
+                        <div id="lower-functions"></div>
+                            <div id="transactions">
+                                <h2>Transaction</h2>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -62,13 +62,34 @@
 
 #dashboard {
     display: flex;
-    background-color: pink;
     width: 98%;
     height: 98%;
     flex-direction: column;
-    align-items: center;
+    color: white;
+}
+
+#bank-name {
+    text-align: center;
 }
 
 
+#peso-balance {
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#upper-functions {
+    display: flex;
+    flex-direction: row;
+}
 
+#upper-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
