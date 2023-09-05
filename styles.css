@@ -93,3 +93,153 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
+
+.budget-wrapper{
+    width: 90%;
+    font-size: 16px;
+    max-width: 43.75em;
+    margin: 1em auto;
+}
+
+.budget-container{
+    width: 100%;
+}
+
+.budget-sub-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.flex-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.budget-wrapper h3{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+.budget-container input{
+    display: block;
+    width: 100%;
+    padding: 0.6em 0.3em;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.3em;
+    color: #414a67;
+    outline: none;
+    font-weight: 400;
+    margin-bottom: 0.6em;
+}
+
+.budget-container input:focus {
+    border-color: pink;
+  }
+
+.total-amount-container,
+.expense-amount-container {
+    background-color: #ffffff;
+    padding: 1.25em 0.9em;
+    background-color: black;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0.8, 0.06);
+}
+
+.budget-output-container {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0.8, 0.06);
+    font-weight: 500;
+    margin: 2em 0;
+    padding: 1.2em;
+  }
+  
+  .budget-output-container p {
+    font-weight: 500;
+    margin-bottom: 0.6em;
+  }
+  
+  .budget-output-container span {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    color: #e5e5e5;
+  }
+  
+  .submit {
+    font-size: 1em;
+    margin-top: 1em;
+    background-color: yellow;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 0.6em 1.2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+  
+  .list {
+    background-color: black;
+    padding: 1.8em 1.2em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0.8, 0.06);
+    border-radius: 0.6em;
+  }
+  
+  .sublist-content {
+    width: 100%;
+    border-left: 0.3em solid yellow;
+    margin-bottom: 0.6em;
+    padding: 0.5em 0;
+  }
+  
+  .expense {
+    font-weight: 500;
+    margin-left: 1.5em;
+    color: white;
+  }
+  
+  .amount {
+    color: white;
+    margin-left: 20%;
+  }
+  
+  .icons-container {
+    width: 5em;
+    margin: 1.2em;
+    align-items: center;
+  }
+  
+  .expense-name {
+    margin-bottom: 1em;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .error {
+    color: #ff465a;
+  }
+  
+  .edit {
+    margin-left: auto;
+  }
+  
+  .edit,
+  .delete {
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: yellow;
+  }
