@@ -121,6 +121,3 @@ function withdraw() {
     // Clear the input field
     withdrawAmountInput.value = "";
 }
-
-  
-
