@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <title>Document</title>
 </head>
 <body>
@@ -69,6 +73,68 @@
         <button onclick="saveUser()">Save</button>
         <button onclick="closePopup()">Cancel</button>
     </div>
+
+    <div class="budget-wrapper">
+        <div class="budget-container">
+          <div class="budget-sub-container">
+            <!-- Budget -->
+            <div class="total-amount-container">
+              <h3>Budget</h3>
+              <p class="hide error" id="budget-error">
+                Value cannot be empty or negative
+              </p>
+              <input type="number" id="total-amount" placeholder="Enter Budget" />
+              <button class="submit" id="total-amount-button">Set Budget</button>
+            </div>
+  
+            <!-- Expenses -->
+            <div class="expense-amount-container">
+              <h3>Expenses</h3>
+              <p class="hide error" id="expense-name-error">
+                Values cannot be empty
+              </p>
+              <input
+                type="text"
+                class="expense-title"
+                id="expense-title"
+                placeholder="Enter Name of Expense"
+              />
+              <p class="hide error" id="expense-cost-error">
+                Value cannot be empty or negative
+              </p>
+              <input
+                type="number"
+                class="expense-cost"
+                id="expense-cost"
+                placeholder="Enter Amount of Expense"
+              />
+              <button class="submit" id="add-expense">Add Expense</button>
+            </div>
+          </div>
+  
+          <!-- Output -->
+          <div class="budget-output-container flex-space">
+            <div>
+              <p>Total Budget</p>
+              <span id="amount">0</span>
+            </div>
+            <div>
+              <p>Expenses</p>
+              <span id="expenditure-value">0</span>
+            </div>
+            <div>
+              <p>Balance</p>
+              <span id="balance-amount">0</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- List -->
+        <div class="list">
+          <h3>Expense List</h3>
+          <div class="list-container" id="list"></div>
+        </div>
+      </div>
 
     <script src="script.js"></script>
 </body>
